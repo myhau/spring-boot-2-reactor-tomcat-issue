@@ -62,7 +62,6 @@ public class MainController {
 
 
     @PostMapping(value = "/notStreamedMono", consumes = APPLICATION_JSON_VALUE)
-
     public Mono<Void> notStreamedMono(@RequestBody Mono<List<Data>> strings) {
         return strings.flatMapIterable(list -> list)
                 .log("notStreamedMonoBefore")

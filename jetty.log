@@ -1,0 +1,211 @@
+2018-03-27 12:40:44.157  INFO 84480 --- [           main] reproduce.tomcat.MainControllerTest      : Starting MainControllerTest on host with PID 84480 (started by mmmm in /Users/mmmm/workspace/n)
+2018-03-27 12:40:44.158  INFO 84480 --- [           main] reproduce.tomcat.MainControllerTest      : No active profile set, falling back to default profiles: default
+2018-03-27 12:40:44.183  INFO 84480 --- [           main] onfigReactiveWebServerApplicationContext : Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@74eb909f: startup date [Tue Mar 27 12:40:44 CEST 2018]; root of context hierarchy
+2018-03-27 12:40:45.217  INFO 84480 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : Mapped "{[/streamed],methods=[POST],consumes=[application/stream+json]}" onto public reactor.core.publisher.Mono<java.lang.Void> reproduce.tomcat.MainController.streamed(org.reactivestreams.Publisher<reproduce.tomcat.MainController$Data>)
+2018-03-27 12:40:45.218  INFO 84480 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : Mapped "{[/notStreamed],methods=[POST],consumes=[application/json]}" onto public reactor.core.publisher.Mono<java.lang.Void> reproduce.tomcat.MainController.notStreamed(org.reactivestreams.Publisher<reproduce.tomcat.MainController$Data>)
+2018-03-27 12:40:45.218  INFO 84480 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : Mapped "{[/notStreamedMono],methods=[POST],consumes=[application/json]}" onto public reactor.core.publisher.Mono<java.lang.Void> reproduce.tomcat.MainController.notStreamedMono(reactor.core.publisher.Mono<java.util.List<reproduce.tomcat.MainController$Data>>)
+2018-03-27 12:40:45.275  INFO 84480 --- [           main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-03-27 12:40:45.275  INFO 84480 --- [           main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-03-27 12:40:45.338  INFO 84480 --- [           main] o.s.w.r.r.m.a.ControllerMethodResolver   : Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@74eb909f: startup date [Tue Mar 27 12:40:44 CEST 2018]; root of context hierarchy
+2018-03-27 12:40:45.420  INFO 84480 --- [           main] org.eclipse.jetty.util.log               : Logging initialized @3124ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-03-27 12:40:45.461  WARN 84480 --- [           main] o.e.jetty.server.handler.ContextHandler  : Empty contextPath
+2018-03-27 12:40:45.465  INFO 84480 --- [           main] .s.b.w.e.j.JettyReactiveWebServerFactory : Server initialized with port: 8080
+2018-03-27 12:40:45.468  INFO 84480 --- [           main] org.eclipse.jetty.server.Server          : jetty-9.4.8.v20171121, build timestamp: 2017-11-21T22:27:37+01:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2018-03-27 12:40:45.498  INFO 84480 --- [           main] o.e.jetty.server.handler.ContextHandler  : Started o.e.j.s.ServletContextHandler@253b380a{/,null,AVAILABLE}
+2018-03-27 12:40:45.498  INFO 84480 --- [           main] org.eclipse.jetty.server.Server          : Started @3204ms
+2018-03-27 12:40:45.723  INFO 84480 --- [           main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@24361cfc{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-27 12:40:45.724  INFO 84480 --- [           main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8080 (http/1.1) with context path '/'
+2018-03-27 12:40:45.728  INFO 84480 --- [           main] reproduce.tomcat.MainControllerTest      : Started MainControllerTest in 2.118 seconds (JVM running for 3.433)
+2018-03-27 12:40:46.423 DEBUG 84480 --- [           main] r.ipc.netty.resources.DefaultLoopEpoll   : Default Epoll support : false
+2018-03-27 12:40:46.424 DEBUG 84480 --- [           main] r.ipc.netty.resources.DefaultLoopKQueue  : Default KQueue support : false
+2018-03-27 12:40:46.424 DEBUG 84480 --- [           main] r.i.n.resources.DefaultPoolResources     : New http client pool for localhost/127.0.0.1:8080
+2018-03-27 12:40:46.476 DEBUG 84480 --- [           main] r.i.n.c.PooledClientContextHandler       : Acquiring existing channel from pool: DefaultPromise@3650d4fc(incomplete) SimpleChannelPool{activeConnections=0}
+2018-03-27 12:40:46.485 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.resources.DefaultPoolResources     : Created new pooled channel [id: 0x1d6dec19], now 0 active connections
+2018-03-27 12:40:46.527 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.channel.ContextHandler       : After pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.decompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.ipc.netty.channel.ChannelOperationsHandler)}
+2018-03-27 12:40:46.530 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19] REGISTERED
+2018-03-27 12:40:46.531 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19] CONNECT: localhost/127.0.0.1:8080
+2018-03-27 12:40:46.536 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] ACTIVE
+2018-03-27 12:40:46.536 DEBUG 84480 --- [ctor-http-nio-3] r.i.n.resources.DefaultPoolResources     : Acquired [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080], now 1 active connections
+2018-03-27 12:40:46.536 DEBUG 84480 --- [ctor-http-nio-3] r.i.n.resources.DefaultPoolResources     : Registering close event to pool release: [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080]
+2018-03-27 12:40:46.537 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.c.PooledClientContextHandler       : Acquired active channel: [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080]
+2018-03-27 12:40:46.563 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.channel.ChannelOperations    : [HttpClient] [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] handler is being applied: HttpClientHandler{startURI=http://localhost:8080/streamed, method=POST, handler=reactor.ipc.netty.http.client.HttpClient$$Lambda$506/319144230@6cf980ac}
+2018-03-27 12:40:46.618 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /streamed HTTP/1.1
+user-agent: ReactorNetty/0.7.5.RELEASE
+transfer-encoding: chunked
+host: localhost:8080
+accept: */*
+accept-encoding: gzip
+WebTestClient-Request-Id: 1
+Content-Type: application/stream+json
+2018-03-27 12:40:46.636 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 221B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 73 74 72 65 61 6d 65 64 20 48 |POST /streamed H|
+|00000010| 54 54 50 2f 31 2e 31 0d 0a 75 73 65 72 2d 61 67 |TTP/1.1..user-ag|
+|00000020| 65 6e 74 3a 20 52 65 61 63 74 6f 72 4e 65 74 74 |ent: ReactorNett|
+|00000030| 79 2f 30 2e 37 2e 35 2e 52 45 4c 45 41 53 45 0d |y/0.7.5.RELEASE.|
+|00000040| 0a 74 72 61 6e 73 66 65 72 2d 65 6e 63 6f 64 69 |.transfer-encodi|
+|00000050| 6e 67 3a 20 63 68 75 6e 6b 65 64 0d 0a 68 6f 73 |ng: chunked..hos|
+|00000060| 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a 38 30 38 |t: localhost:808|
+|00000070| 30 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a |0..accept: */*..|
+|00000080| 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 3a |accept-encoding:|
+|00000090| 20 67 7a 69 70 0d 0a 57 65 62 54 65 73 74 43 6c | gzip..WebTestCl|
+|000000a0| 69 65 6e 74 2d 52 65 71 75 65 73 74 2d 49 64 3a |ient-Request-Id:|
+|000000b0| 20 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 | 1..Content-Type|
+|000000c0| 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 73 74 |: application/st|
+|000000d0| 72 65 61 6d 2b 6a 73 6f 6e 0d 0a 0d 0a          |ream+json....   |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.636 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:40:46.647  INFO 84480 --- [ctor-http-nio-4] streamedTest                             : | onSubscribe([Synchronous Fuseable] FluxArray.ArraySubscription)
+2018-03-27 12:40:46.648  INFO 84480 --- [ctor-http-nio-4] streamedTest                             : | onNext(reproduce.tomcat.MainController$Data@5b75fcbd)
+2018-03-27 12:40:46.658 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Writing object FluxContextStart
+2018-03-27 12:40:46.662 TRACE 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Pending write size = 10
+2018-03-27 12:40:46.663 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 3B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 61 0d 0a                                        |a..             |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.663 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 10B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 7b 22 61 22 3a 22 31 22 7d 0a                   |{"a":"1"}.      |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.663 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 2B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 0d 0a                                           |..              |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.663 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:40:46.665  INFO 84480 --- [ctor-http-nio-4] streamedTest                             : | onNext(reproduce.tomcat.MainController$Data@75dc83d1)
+2018-03-27 12:40:46.665 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Writing object FluxContextStart
+2018-03-27 12:40:46.665 TRACE 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Pending write size = 10
+2018-03-27 12:40:46.665 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 3B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 61 0d 0a                                        |a..             |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.665 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 10B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 7b 22 61 22 3a 22 32 22 7d 0a                   |{"a":"2"}.      |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.665 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 2B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 0d 0a                                           |..              |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.665 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:40:46.666  INFO 84480 --- [ctor-http-nio-4] streamedTest                             : | onComplete()
+2018-03-27 12:40:46.669 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Writing object EmptyLastHttpContent
+2018-03-27 12:40:46.669 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] WRITE: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.669 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:40:46.766  INFO 84480 --- [qtp425107133-19] streamed                                 : onSubscribe(FluxMap.MapSubscriber)
+2018-03-27 12:40:46.767  INFO 84480 --- [qtp425107133-19] streamed                                 : request(unbounded)
+2018-03-27 12:40:46.769  INFO 84480 --- [      elastic-2] streamedBefore                           : onSubscribe(FluxSwitchIfEmpty.SwitchIfEmptySubscriber)
+2018-03-27 12:40:46.769 TRACE 84480 --- [qtp425107133-19] etServerHttpRequest$RequestBodyPublisher : I/O event onDataAvailable
+2018-03-27 12:40:46.769  INFO 84480 --- [      elastic-2] streamedBefore                           : request(unbounded)
+2018-03-27 12:40:46.773 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : UNSUBSCRIBED -> SUBSCRIBING
+2018-03-27 12:40:46.774 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Signal request(32)
+2018-03-27 12:40:46.774 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : SUBSCRIBING -> DEMAND
+2018-03-27 12:40:46.774 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : I/O event onDataAvailable
+2018-03-27 12:40:46.774 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : DEMAND -> READING
+2018-03-27 12:40:46.775 TRACE 84480 --- [      elastic-2] o.s.h.s.r.ServletServerHttpRequest       : InputStream read returned 10 bytes
+2018-03-27 12:40:46.775 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Data item read, publishing..
+2018-03-27 12:40:46.778  INFO 84480 --- [      elastic-2] streamedBefore                           : onNext(reproduce.tomcat.MainController$Data@5b18b1f0)
+2018-03-27 12:40:46.778  INFO 84480 --- [      elastic-2] streamed                                 : onNext(reproduce.tomcat.MainController$Data@5b18b1f01)
+2018-03-27 12:40:46.779 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Signal request(1)
+2018-03-27 12:40:46.779 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : No more data to read
+2018-03-27 12:40:46.779 TRACE 84480 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : READING -> DEMAND
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : I/O event onDataAvailable
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : DEMAND -> READING
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] o.s.h.s.r.ServletServerHttpRequest       : InputStream read returned 10 bytes
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : Data item read, publishing..
+2018-03-27 12:40:46.780  INFO 84480 --- [qtp425107133-21] streamedBefore                           : onNext(reproduce.tomcat.MainController$Data@24698829)
+2018-03-27 12:40:46.780  INFO 84480 --- [qtp425107133-21] streamed                                 : onNext(reproduce.tomcat.MainController$Data@246988291)
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : Signal request(1)
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] o.s.h.s.r.ServletServerHttpRequest       : InputStream read returned -1
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : No more data to read
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : READING -> DEMAND
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : I/O event onAllDataRead
+2018-03-27 12:40:46.780 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : DEMAND -> COMPLETED
+2018-03-27 12:40:46.781 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : Signal request(1)
+2018-03-27 12:40:46.781  INFO 84480 --- [qtp425107133-21] streamedBefore                           : onComplete()
+2018-03-27 12:40:46.781  INFO 84480 --- [qtp425107133-21] streamed                                 : onComplete()
+2018-03-27 12:40:46.782 DEBUG 84480 --- [qtp425107133-21] o.s.h.s.r.ServletHttpHandlerAdapter      : Handling completed with success
+2018-03-27 12:40:46.787 TRACE 84480 --- [qtp425107133-21] etServerHttpRequest$RequestBodyPublisher : I/O event onAllDataRead
+2018-03-27 12:40:46.789 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] READ: 75B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+|00000010| 0a 44 61 74 65 3a 20 54 75 65 2c 20 32 37 20 4d |.Date: Tue, 27 M|
+|00000020| 61 72 20 32 30 31 38 20 31 30 3a 34 30 3a 34 36 |ar 2018 10:40:46|
+|00000030| 20 47 4d 54 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 | GMT..Content-Le|
+|00000040| 6e 67 74 68 3a 20 30 0d 0a 0d 0a                |ngth: 0....     |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:40:46.791 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.http.client.HttpClientOperations   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Received response (auto-read:false) : [Date=Tue, 27 Mar 2018 10:40:46 GMT, Content-Length=0]
+2018-03-27 12:40:46.795 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.http.client.HttpClientOperations   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Received last HTTP packet
+2018-03-27 12:40:46.802 TRACE 84480 --- [ctor-http-nio-4] r.ipc.netty.channel.ChannelOperations    : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Disposing ChannelOperation from a channel
+
+java.lang.Exception: ChannelOperation terminal stack
+	at reactor.ipc.netty.channel.ChannelOperations.onHandlerTerminate(ChannelOperations.java:411) [reactor-netty-0.7.5.RELEASE.jar:0.7.5.RELEASE]
+	at reactor.ipc.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:597) [reactor-netty-0.7.5.RELEASE.jar:0.7.5.RELEASE]
+	at reactor.ipc.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:134) [reactor-netty-0.7.5.RELEASE.jar:0.7.5.RELEASE]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) [netty-codec-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) [netty-codec-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241) [netty-handler-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1414) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:945) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:146) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459) [netty-transport-4.1.22.Final.jar:4.1.22.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886) [netty-common-4.1.22.Final.jar:4.1.22.Final]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_92]
+
+2018-03-27 12:40:46.805 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] USER_EVENT: [Handler Terminated]
+2018-03-27 12:40:46.806 TRACE 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] End of the pipeline, User event [Handler Terminated]
+2018-03-27 12:40:46.806 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] Disposing context reactor.ipc.netty.channel.PooledClientContextHandler@d70d14d
+2018-03-27 12:40:46.806 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.c.PooledClientContextHandler       : Releasing channel: [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080]
+2018-03-27 12:40:46.806  INFO 84480 --- [      Thread-11] onfigReactiveWebServerApplicationContext : Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@74eb909f: startup date [Tue Mar 27 12:40:44 CEST 2018]; root of context hierarchy
+2018-03-27 12:40:46.806 DEBUG 84480 --- [ctor-http-nio-4] r.i.n.resources.DefaultPoolResources     : Released [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080], now 0 active connections
+2018-03-27 12:40:46.807 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] READ COMPLETE
+2018-03-27 12:40:46.812 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 - R:localhost/127.0.0.1:8080] READ COMPLETE
+2018-03-27 12:40:46.813 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 ! R:localhost/127.0.0.1:8080] CLOSE
+2018-03-27 12:40:46.813 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 ! R:localhost/127.0.0.1:8080] INACTIVE
+2018-03-27 12:40:46.813  INFO 84480 --- [      Thread-11] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@24361cfc{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2018-03-27 12:40:46.814 DEBUG 84480 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x1d6dec19, L:/127.0.0.1:60055 ! R:localhost/127.0.0.1:8080] UNREGISTERED
+2018-03-27 12:40:46.815  INFO 84480 --- [      Thread-11] o.e.jetty.server.handler.ContextHandler  : Stopped o.e.j.s.ServletContextHandler@253b380a{/,null,UNAVAILABLE}
+
+Process finished with exit code 0

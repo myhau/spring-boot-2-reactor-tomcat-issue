@@ -1,0 +1,274 @@
+2018-03-27 12:42:24.178  INFO 84704 --- [           main] reproduce.tomcat.MainControllerTest      : Starting MainControllerTest on host with PID 84704 (started by mmmm in /Users/mmmm/workspace/n)
+2018-03-27 12:42:24.179  INFO 84704 --- [           main] reproduce.tomcat.MainControllerTest      : No active profile set, falling back to default profiles: default
+2018-03-27 12:42:24.212  INFO 84704 --- [           main] onfigReactiveWebServerApplicationContext : Refreshing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@324a0017: startup date [Tue Mar 27 12:42:24 CEST 2018]; root of context hierarchy
+2018-03-27 12:42:25.298  INFO 84704 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : Mapped "{[/streamed],methods=[POST],consumes=[application/stream+json]}" onto public reactor.core.publisher.Mono<java.lang.Void> reproduce.tomcat.MainController.streamed(org.reactivestreams.Publisher<reproduce.tomcat.MainController$Data>)
+2018-03-27 12:42:25.299  INFO 84704 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : Mapped "{[/notStreamed],methods=[POST],consumes=[application/json]}" onto public reactor.core.publisher.Mono<java.lang.Void> reproduce.tomcat.MainController.notStreamed(org.reactivestreams.Publisher<reproduce.tomcat.MainController$Data>)
+2018-03-27 12:42:25.299  INFO 84704 --- [           main] s.w.r.r.m.a.RequestMappingHandlerMapping : Mapped "{[/notStreamedMono],methods=[POST],consumes=[application/json]}" onto public reactor.core.publisher.Mono<java.lang.Void> reproduce.tomcat.MainController.notStreamedMono(reactor.core.publisher.Mono<java.util.List<reproduce.tomcat.MainController$Data>>)
+2018-03-27 12:42:25.366  INFO 84704 --- [           main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-03-27 12:42:25.367  INFO 84704 --- [           main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.reactive.resource.ResourceWebHandler]
+2018-03-27 12:42:25.428  INFO 84704 --- [           main] o.s.w.r.r.m.a.ControllerMethodResolver   : Looking for @ControllerAdvice: org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@324a0017: startup date [Tue Mar 27 12:42:24 CEST 2018]; root of context hierarchy
+2018-03-27 12:42:25.602  INFO 84704 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-03-27 12:42:25.711  INFO 84704 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-27 12:42:25.711  INFO 84704 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-03-27 12:42:25.722  INFO 84704 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/mmmm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-03-27 12:42:26.084  INFO 84704 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-03-27 12:42:26.089  INFO 84704 --- [           main] reproduce.tomcat.MainControllerTest      : Started MainControllerTest in 2.348 seconds (JVM running for 3.563)
+2018-03-27 12:42:26.785 DEBUG 84704 --- [           main] r.ipc.netty.resources.DefaultLoopEpoll   : Default Epoll support : false
+2018-03-27 12:42:26.786 DEBUG 84704 --- [           main] r.ipc.netty.resources.DefaultLoopKQueue  : Default KQueue support : false
+2018-03-27 12:42:26.786 DEBUG 84704 --- [           main] r.i.n.resources.DefaultPoolResources     : New http client pool for localhost/127.0.0.1:8080
+2018-03-27 12:42:26.860 DEBUG 84704 --- [           main] r.i.n.c.PooledClientContextHandler       : Acquiring existing channel from pool: DefaultPromise@188ac8a3(incomplete) SimpleChannelPool{activeConnections=0}
+2018-03-27 12:42:26.879 DEBUG 84704 --- [ctor-http-nio-4] r.i.n.resources.DefaultPoolResources     : Created new pooled channel [id: 0x4f94f706], now 0 active connections
+2018-03-27 12:42:26.946 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.channel.ContextHandler       : After pipeline DefaultChannelPipeline{(reactor.left.loggingHandler = io.netty.handler.logging.LoggingHandler), (SimpleChannelPool$1#0 = io.netty.channel.pool.SimpleChannelPool$1), (reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.decompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.ipc.netty.channel.ChannelOperationsHandler)}
+2018-03-27 12:42:26.955 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706] REGISTERED
+2018-03-27 12:42:26.955 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706] CONNECT: localhost/127.0.0.1:8080
+2018-03-27 12:42:26.966 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] ACTIVE
+2018-03-27 12:42:26.966 DEBUG 84704 --- [ctor-http-nio-3] r.i.n.resources.DefaultPoolResources     : Acquired [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080], now 1 active connections
+2018-03-27 12:42:26.967 DEBUG 84704 --- [ctor-http-nio-3] r.i.n.resources.DefaultPoolResources     : Registering close event to pool release: [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080]
+2018-03-27 12:42:26.968 DEBUG 84704 --- [ctor-http-nio-4] r.i.n.c.PooledClientContextHandler       : Acquired active channel: [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080]
+2018-03-27 12:42:27.012 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.channel.ChannelOperations    : [HttpClient] [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] handler is being applied: HttpClientHandler{startURI=http://localhost:8080/streamed, method=POST, handler=reactor.ipc.netty.http.client.HttpClient$$Lambda$521/2130400175@136a3dbf}
+2018-03-27 12:42:27.208 DEBUG 84704 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] Writing object DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /streamed HTTP/1.1
+user-agent: ReactorNetty/0.7.5.RELEASE
+transfer-encoding: chunked
+host: localhost:8080
+accept: */*
+accept-encoding: gzip
+WebTestClient-Request-Id: 1
+Content-Type: application/stream+json
+2018-03-27 12:42:27.287 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 221B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 50 4f 53 54 20 2f 73 74 72 65 61 6d 65 64 20 48 |POST /streamed H|
+|00000010| 54 54 50 2f 31 2e 31 0d 0a 75 73 65 72 2d 61 67 |TTP/1.1..user-ag|
+|00000020| 65 6e 74 3a 20 52 65 61 63 74 6f 72 4e 65 74 74 |ent: ReactorNett|
+|00000030| 79 2f 30 2e 37 2e 35 2e 52 45 4c 45 41 53 45 0d |y/0.7.5.RELEASE.|
+|00000040| 0a 74 72 61 6e 73 66 65 72 2d 65 6e 63 6f 64 69 |.transfer-encodi|
+|00000050| 6e 67 3a 20 63 68 75 6e 6b 65 64 0d 0a 68 6f 73 |ng: chunked..hos|
+|00000060| 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a 38 30 38 |t: localhost:808|
+|00000070| 30 0d 0a 61 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a |0..accept: */*..|
+|00000080| 61 63 63 65 70 74 2d 65 6e 63 6f 64 69 6e 67 3a |accept-encoding:|
+|00000090| 20 67 7a 69 70 0d 0a 57 65 62 54 65 73 74 43 6c | gzip..WebTestCl|
+|000000a0| 69 65 6e 74 2d 52 65 71 75 65 73 74 2d 49 64 3a |ient-Request-Id:|
+|000000b0| 20 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 | 1..Content-Type|
+|000000c0| 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 73 74 |: application/st|
+|000000d0| 72 65 61 6d 2b 6a 73 6f 6e 0d 0a 0d 0a          |ream+json....   |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.289 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:42:27.335  INFO 84704 --- [ctor-http-nio-4] streamedTest                             : | onSubscribe([Synchronous Fuseable] FluxArray.ArraySubscription)
+2018-03-27 12:42:27.339  INFO 84704 --- [ctor-http-nio-4] streamedTest                             : | onNext(reproduce.tomcat.MainController$Data@1f496e59)
+2018-03-27 12:42:27.500 DEBUG 84704 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] Writing object FluxContextStart
+2018-03-27 12:42:27.511 TRACE 84704 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] Pending write size = 10
+2018-03-27 12:42:27.512 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 3B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 61 0d 0a                                        |a..             |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.512 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 10B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 7b 22 61 22 3a 22 31 22 7d 0a                   |{"a":"1"}.      |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.513 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 2B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 0d 0a                                           |..              |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.513 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:42:27.516  INFO 84704 --- [ctor-http-nio-4] streamedTest                             : | onNext(reproduce.tomcat.MainController$Data@7a77c9e8)
+2018-03-27 12:42:27.522 DEBUG 84704 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] Writing object FluxContextStart
+2018-03-27 12:42:27.523 TRACE 84704 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] Pending write size = 10
+2018-03-27 12:42:27.523 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 3B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 61 0d 0a                                        |a..             |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.523 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 10B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 7b 22 61 22 3a 22 32 22 7d 0a                   |{"a":"2"}.      |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.523 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 2B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 0d 0a                                           |..              |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.523 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:42:27.524  INFO 84704 --- [ctor-http-nio-4] streamedTest                             : | onComplete()
+2018-03-27 12:42:27.531 DEBUG 84704 --- [ctor-http-nio-4] r.i.n.channel.ChannelOperationsHandler   : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] Writing object EmptyLastHttpContent
+2018-03-27 12:42:27.532 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] WRITE: 5B
+         +-------------------------------------------------+
+         |  0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f |
++--------+-------------------------------------------------+----------------+
+|00000000| 30 0d 0a 0d 0a                                  |0....           |
++--------+-------------------------------------------------+----------------+
+2018-03-27 12:42:27.532 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] FLUSH
+2018-03-27 12:42:27.736  INFO 84704 --- [nio-8080-exec-1] streamed                                 : onSubscribe(FluxMap.MapSubscriber)
+2018-03-27 12:42:27.737  INFO 84704 --- [nio-8080-exec-1] streamed                                 : request(unbounded)
+2018-03-27 12:42:27.741  INFO 84704 --- [      elastic-2] streamedBefore                           : onSubscribe(FluxSwitchIfEmpty.SwitchIfEmptySubscriber)
+2018-03-27 12:42:27.742  INFO 84704 --- [      elastic-2] streamedBefore                           : request(unbounded)
+2018-03-27 12:42:27.743 TRACE 84704 --- [nio-8080-exec-1] etServerHttpRequest$RequestBodyPublisher : I/O event onDataAvailable
+2018-03-27 12:42:27.761 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : UNSUBSCRIBED -> SUBSCRIBING
+2018-03-27 12:42:27.765 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Signal request(32)
+2018-03-27 12:42:27.765 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : SUBSCRIBING -> DEMAND
+2018-03-27 12:42:27.765 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : I/O event onDataAvailable
+2018-03-27 12:42:27.765 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : DEMAND -> READING
+2018-03-27 12:42:27.766 TRACE 84704 --- [      elastic-2] tpHandlerAdapter$TomcatServerHttpRequest : read:10
+2018-03-27 12:42:27.766 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Data item read, publishing..
+2018-03-27 12:42:27.772  INFO 84704 --- [      elastic-2] streamedBefore                           : onNext(reproduce.tomcat.MainController$Data@3f062d1a)
+2018-03-27 12:42:27.772  INFO 84704 --- [      elastic-2] streamed                                 : onNext(reproduce.tomcat.MainController$Data@3f062d1a1)
+2018-03-27 12:42:27.772 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Signal request(1)
+2018-03-27 12:42:27.772 TRACE 84704 --- [      elastic-2] tpHandlerAdapter$TomcatServerHttpRequest : read:10
+2018-03-27 12:42:27.772 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Data item read, publishing..
+2018-03-27 12:42:27.772  INFO 84704 --- [      elastic-2] streamedBefore                           : onNext(reproduce.tomcat.MainController$Data@44b6322a)
+2018-03-27 12:42:27.772  INFO 84704 --- [      elastic-2] streamed                                 : onNext(reproduce.tomcat.MainController$Data@44b6322a1)
+2018-03-27 12:42:27.772 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : Signal request(1)
+2018-03-27 12:42:27.773 TRACE 84704 --- [      elastic-2] tpHandlerAdapter$TomcatServerHttpRequest : read:-1
+2018-03-27 12:42:27.773 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : No more data to read
+2018-03-27 12:42:27.773 TRACE 84704 --- [      elastic-2] etServerHttpRequest$RequestBodyPublisher : READING -> DEMAND
+2018-03-27 12:42:31.870 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 - R:localhost/127.0.0.1:8080] CLOSE
+2018-03-27 12:42:31.872 DEBUG 84704 --- [ctor-http-nio-4] r.i.n.resources.DefaultPoolResources     : Released [id: 0x4f94f706, L:/127.0.0.1:60175 ! R:localhost/127.0.0.1:8080], now 0 active connections
+2018-03-27 12:42:31.873 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 ! R:localhost/127.0.0.1:8080] INACTIVE
+2018-03-27 12:42:31.874 DEBUG 84704 --- [ctor-http-nio-4] r.ipc.netty.http.client.HttpClient       : [id: 0x4f94f706, L:/127.0.0.1:60175 ! R:localhost/127.0.0.1:8080] UNREGISTERED
+
+java.lang.IllegalStateException: Timeout on blocking read for 5000 MILLISECONDS
+
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:110)
+	at reactor.core.publisher.Mono.block(Mono.java:1199)
+	at org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultRequestBodyUriSpec.exchange(DefaultWebTestClient.java:282)
+	at reproduce.tomcat.MainControllerTest.streamed(MainControllerTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:436)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:170)
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:113)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:58)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$3(HierarchicalTestExecutor.java:112)
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.executeRecursively(HierarchicalTestExecutor.java:108)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.execute(HierarchicalTestExecutor.java:79)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$2(HierarchicalTestExecutor.java:120)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$3(HierarchicalTestExecutor.java:120)
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.executeRecursively(HierarchicalTestExecutor.java:108)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.execute(HierarchicalTestExecutor.java:79)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$2(HierarchicalTestExecutor.java:120)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:418)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.lambda$executeRecursively$3(HierarchicalTestExecutor.java:120)
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.executeRecursively(HierarchicalTestExecutor.java:108)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor$NodeExecutor.execute(HierarchicalTestExecutor.java:79)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:55)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:65)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+
+2018-03-27 12:42:31.890  INFO 84704 --- [       Thread-3] onfigReactiveWebServerApplicationContext : Closing org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@324a0017: startup date [Tue Mar 27 12:42:24 CEST 2018]; root of context hierarchy
+2018-03-27 12:42:31.901 TRACE 84704 --- [nio-8080-exec-2] etServerHttpRequest$RequestBodyPublisher : I/O event onError: java.lang.IllegalStateException: Async operation timeout.
+2018-03-27 12:42:31.901 TRACE 84704 --- [nio-8080-exec-2] etServerHttpRequest$RequestBodyPublisher : DEMAND -> COMPLETED
+2018-03-27 12:42:31.902 TRACE 84704 --- [nio-8080-exec-2] etServerHttpRequest$RequestBodyPublisher : Signal cancel()
+2018-03-27 12:42:31.902 TRACE 84704 --- [nio-8080-exec-2] etServerHttpRequest$RequestBodyPublisher : Signal cancel()
+2018-03-27 12:42:31.902 ERROR 84704 --- [nio-8080-exec-2] streamedBefore                           : onError(java.lang.IllegalStateException: Async operation timeout.)
+2018-03-27 12:42:31.907 ERROR 84704 --- [nio-8080-exec-2] streamedBefore                           :
+
+java.lang.IllegalStateException: Async operation timeout.
+	at org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener.onTimeout(ServletServerHttpRequest.java:230) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.AsyncListenerWrapper.fireOnTimeout(AsyncListenerWrapper.java:44) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.AsyncContextImpl.timeout(AsyncContextImpl.java:136) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:153) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:227) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_92]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_92]
+
+2018-03-27 12:42:31.907 ERROR 84704 --- [nio-8080-exec-2] streamed                                 : onError(java.lang.IllegalStateException: Async operation timeout.)
+2018-03-27 12:42:31.908 ERROR 84704 --- [nio-8080-exec-2] streamed                                 :
+
+java.lang.IllegalStateException: Async operation timeout.
+	at org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener.onTimeout(ServletServerHttpRequest.java:230) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.AsyncListenerWrapper.fireOnTimeout(AsyncListenerWrapper.java:44) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.AsyncContextImpl.timeout(AsyncContextImpl.java:136) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:153) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:227) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_92]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_92]
+
+2018-03-27 12:42:31.922 ERROR 84704 --- [nio-8080-exec-2] .a.w.r.e.DefaultErrorWebExceptionHandler : Failed to handle request [null http://localhost:8080/streamed]
+
+java.lang.IllegalStateException: Async operation timeout.
+	at org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener.onTimeout(ServletServerHttpRequest.java:230) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.AsyncListenerWrapper.fireOnTimeout(AsyncListenerWrapper.java:44) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.AsyncContextImpl.timeout(AsyncContextImpl.java:136) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:153) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:227) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_92]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_92]
+
+2018-03-27 12:42:31.945 TRACE 84704 --- [nio-8080-exec-2] rHttpResponse$ResponseBodyFlushProcessor : UNSUBSCRIBED -> REQUESTED
+2018-03-27 12:42:31.945 TRACE 84704 --- [nio-8080-exec-2] rHttpResponse$ResponseBodyFlushProcessor : Received onNext publisher
+2018-03-27 12:42:31.945 TRACE 84704 --- [nio-8080-exec-2] rHttpResponse$ResponseBodyFlushProcessor : REQUESTED -> RECEIVED
+2018-03-27 12:42:31.948 TRACE 84704 --- [nio-8080-exec-2] ServerHttpResponse$ResponseBodyProcessor : UNSUBSCRIBED -> REQUESTED
+2018-03-27 12:42:31.948 TRACE 84704 --- [nio-8080-exec-2] ServerHttpResponse$ResponseBodyProcessor : Received onNext data item
+2018-03-27 12:42:31.948 TRACE 84704 --- [nio-8080-exec-2] ServerHttpResponse$ResponseBodyProcessor : REQUESTED -> RECEIVED
+2018-03-27 12:42:31.948 TRACE 84704 --- [nio-8080-exec-2] ServerHttpResponse$ResponseBodyProcessor : isWritePossible[false]
+2018-03-27 12:42:31.949 TRACE 84704 --- [nio-8080-exec-2] o.s.h.s.reactive.WriteResultPublisher    : UNSUBSCRIBED subscribe: org.springframework.http.server.reactive.AbstractListenerWriteFlushProcessor$State$WriteResultSubscriber@71cb1e53
+2018-03-27 12:42:31.949 TRACE 84704 --- [nio-8080-exec-2] o.s.h.s.reactive.WriteResultPublisher    : SUBSCRIBING request: 9223372036854775807
+2018-03-27 12:42:31.949 TRACE 84704 --- [nio-8080-exec-2] rHttpResponse$ResponseBodyFlushProcessor : Received onComplete
+2018-03-27 12:42:31.949 TRACE 84704 --- [nio-8080-exec-2] o.s.h.s.reactive.WriteResultPublisher    : UNSUBSCRIBED subscribe: reactor.core.publisher.MonoNext$NextSubscriber@768fd311
+2018-03-27 12:42:31.949 TRACE 84704 --- [nio-8080-exec-2] o.s.h.s.reactive.WriteResultPublisher    : SUBSCRIBING request: 9223372036854775807
+2018-03-27 12:42:31.949 TRACE 84704 --- [nio-8080-exec-2] ServerHttpResponse$ResponseBodyProcessor : Received onComplete
+2018-03-27 12:42:31.950 DEBUG 84704 --- [nio-8080-exec-2] o.s.h.s.r.ServletHttpHandlerAdapter      : Timeout notification from Servlet container
+
+Process finished with exit code 255
